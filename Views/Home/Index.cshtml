@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-lg-4">
+
+            <div class="box">
+                <div class="img-box">
+                    <img src="@item.Url" alt="">
+                </div>
+                <div class="detail-box">
+                    <span class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </span>
+                    <a href="">
+                        @item.Nama
+                    </a>
+                    <div class="price_box">
+                        <h6 class="price_heading">
+                            <span>$</span>@item.Harga
+                        </h6>
+
+                        <section>
+
+                            <div class="container">
+                                <div class="heading_container heading_center">
+
+                                    <div class="btn-box">
+                                        <button type="button" class="btn btn-outline-danger">Tambah Barang</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    }

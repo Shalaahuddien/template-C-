@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Floram</title>
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header class="header_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                    <span>Eccommerce</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""> </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fruit.html">Barangs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- product section -->
+
+    <section class="product_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>
+                    Penjualan Cepat
+                </h2>
+                <p>
+                    E-Commerce tidak terbatas ruang dan wilayah. Anda bisa menjual produk kepada siapa saja di seluruh
+                    dunia.
+                </p>
+            </div>
+
+            <div class="btn-box">
+                <a href="">
+                    View All
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="heading_container heading_center" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+    </div>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; CEO Daffa <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
